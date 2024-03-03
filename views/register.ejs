@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<section class="w-[100%] h-[100vh] bg-cover flex-no-repeat " style="background-image: url('public/image/galaxy2.webp');">
+    <nav class="w-[100%] h-[8vh]  flex justify-between items-center bg-black opacity-80">
+        <a href="/"><i class="fa-solid fa-shuttle-space text-white text-[40px] ml-5"></i></a>
+        <div class="flex justify-around w-[300px]">
+            <a href="/login" class="text-[20px] text-white font-bold">Login</a>
+            <a href="/register" class="text-[20px] text-white font-bold">Register</a>
+        </div>
+    </nav>
+    <div class="w-[100%] h-[84vh] flex flex-col items-center justify-center">
+            <form  action="/register" method="post" class="bg-black  w-[600px] h-[500px] rounded-lg flex flex-col items-center justify-around">
+                <h1 class="text-white text-[50px] font-bold">Registrarse</h1>
+                <div style="display: flex; flex-direction: column; justify-content: space-around;">
+                    <label for="">Nombre de usuario</label>
+                    <input type="text" name="name" id="" placeholder="Nombre de usuario" style="border: 1px solid black; outline: none; width: 300px; padding: 5px;border-radius: 10px;">
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: space-around;">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="" placeholder="Email de usuario" style="border: 1px solid black; outline: none; width: 300px; padding: 5px;border-radius: 10px;">
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: space-around;">
+                    <label for="">Contraseña</label>
+                    <input type="password" name="password" id="" placeholder="Contraseña de usuario" style="border: 1px solid black; outline: none; width: 300px; padding: 5px; border-radius: 10px;">
+                </div>
+                <button class="text-white font-bold bg-blue-800 rounded-lg p-2 w-[150px]" type="submit">Register</button>
+            </form>
+    </div>
+<%- include('partials/footer') %>
